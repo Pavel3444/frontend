@@ -2,14 +2,36 @@
   "name": "webpack-e",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx webpack serve --config webpack.config.dev.js",
+    "build": "npx webpack --config webpack.config.prod.js",
+    "build:dev": "npx webpack --config webpack.config.dev.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "eslint": "^8.37.0",
+    "eslint-webpack-plugin": "^4.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.1.0",
+    "postcss-preset-env": "^8.0.1",
+    "sass": "^1.59.3",
+    "sass-loader": "^13.2.1",
+    "terser-webpack-plugin": "^5.3.7",
     "webpack": "^5.76.3",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^11.0.0"
   }
 }

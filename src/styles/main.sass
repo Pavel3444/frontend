@@ -1,0 +1,112 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+body
+    font-family: 'Roboto', sans-serif
+    background: darkgreen
+#app
+    width: 100vw
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    position: relative
+    padding-bottom: 80px
+
+.bg
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    z-index: -1
+    filter: blur(5px)
+.sun
+    background: url("../img/summer-bg.jpg") no-repeat 0 0
+    background-size: cover
+.snow
+    background: url("../img/winter-bg.jpg") no-repeat 0 0
+    background-size: cover
+.rain
+    background: url("../img/rainy-bg.jpg") no-repeat 0 0
+    background-size: cover
+audio
+    opacity: 0
+    display: none
+    position: absolute
+    z-index: -1
+
+h1 
+    color: #ff5e00
+    font-size: 60px
+    padding: 60px 0
+    text-align: center
+    font-weight: 700
+.btns
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+.btn
+    width: 200px
+    height: 200px
+    border: 1px solid white
+    border-radius: 25px
+    margin: 20px
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    &.pause
+        img:first-child
+            display: none
+        img:last-child
+            display: block
+    img
+        width: 60px
+        height: 60px
+        &:last-child
+            display: none
+
+.btn1
+    background: url("../img/summer-bg.jpg") no-repeat 50% 50%
+    background-size: cover
+.btn2
+    background: url("../img/rainy-bg.jpg") no-repeat 50% 50%
+    background-size: cover
+.btn3
+    background: url("../img/winter-bg.jpg") no-repeat 50% 50%
+    background-size: cover
+.sound
+    display: flex
+    align-items: center
+    justify-content: center
+    .graph
+        position: relative
+        margin-top: 50px
+        border: 1px solid #e5e5e5
+        background: #fff
+        border-radius: 8px
+        cursor: pointer
+        height: 10px
+        width: 200px
+        .completed
+            position: absolute
+            left: 0
+            width: 100%
+            top: 0
+            bottom: 0
+            right: auto
+            border-radius: 8px
+            background: #2626f1
+        .point
+            position: absolute
+            right: auto
+            left: 100%
+            transform: translateX(-50%)
+            width: 20px
+            height: 20px
+            border-radius: 50%
+            cursor: pointer
+            background: #2626f1
+            top: -5px
+
