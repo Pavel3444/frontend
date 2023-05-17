@@ -1,11 +1,14 @@
-import * as episode from '../data/episode.json';
-import Categories from "../components/categories";
-import {useState} from "react";
+import episode from '../data/episode.json';
+import {NavLink} from "react-router-dom";
 
 export default function Episode() {
-    const [list] = useState(episode);
-
-    return (<div>
-        <Categories list={list}/>
-    </div>)
+  return (
+      <div className="row">
+          {episode.map((el) => (
+              <div key={`o.id-${el.id}`} className="col-12 col-md-6 col-lg-4 px-3 py-4">
+                  <NavLink to={`/details/episode-${el.id}`} state={el}>{el.name}</NavLink>
+              </div>
+          ))}
+      </div>
+  );
 }
