@@ -1,10 +1,13 @@
 import characters from '../data/characters.json';
-import Categories from "../components/categories";
-
+import {NavLink} from "react-router-dom";
 export default function Characters() {
   return (
-    <div>
-      <Categories list={characters} />
-    </div>
+        <div className="row">
+            {characters.map((el) => (
+                <div key={`o.id-${el.id}`} className="col-12 col-md-6 col-lg-4 px-3 py-4">
+                    <NavLink to={`/details/characters-${el.id}`} state={el}>{el.name}</NavLink>
+                </div>
+            ))}
+        </div>
   )
 }

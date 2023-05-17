@@ -2,7 +2,7 @@ import {NavLink} from "react-router-dom";
 
 export default function ErrorPage(){
     return(
-        <div className={'error'}>
+        <div className={'errorPage'}>
             <h2>
                 404 not found
             </h2>

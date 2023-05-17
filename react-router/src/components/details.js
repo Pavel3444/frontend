@@ -1,9 +1,8 @@
-import {useLocation} from "react-router-dom";
+import {Navigate, useLocation} from "react-router-dom";
 
 export default function DetailsPage(){
     const {state} = useLocation();
-
-
+    if (!state) return (<Navigate to="/error"/>)
     return(<div className="details">
         <p>Name: {state.name}</p>
         <p>Created: {state.created}</p>
