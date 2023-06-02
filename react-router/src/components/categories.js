@@ -1,4 +1,4 @@
-import {NavLink, Route, Routes, useLocation} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 export default function Categories(props){
     const {state} =useLocation();
     const shownList =[];
