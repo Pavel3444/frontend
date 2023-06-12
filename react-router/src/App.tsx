@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import {Route, Routes, NavLink} from "react-router-dom";
 import MainPage from "./views/main";
 import DetailsPage from "./components/details";

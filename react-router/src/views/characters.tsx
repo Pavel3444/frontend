@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as characters from '../data/characters.json';
 import Categories from "../components/categories";
 import {useState} from "react";

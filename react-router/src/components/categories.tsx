@@ -1,5 +1,6 @@
-import {NavLink, Route, Routes, useLocation} from "react-router-dom";
-export default function Categories(props){
+import {NavLink, useLocation} from "react-router-dom";
+import {IList} from "../interfaces/listInterfaces";
+export default function Categories(props: {list: IList}){
     const {state} =useLocation();
     const shownList =[];
         for (let o in props.list) {

@@ -1,0 +1,65 @@
+.text__field {
+  color: inherit;
+  position: relative;
+
+  .text__label {
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+    &.asterisk:before{
+      content: '*';
+      font-weight: bold;
+      font-size: 20px;
+      position: absolute;
+      right: -20px;
+      color: red;
+    }
+  }
+
+  .text__p {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+
+  input {
+    width: 100%;
+    height: 52px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 2px solid transparent;
+    outline: none;
+
+    &.error {
+      border: 2px solid red;
+      color: red;
+      font-size: 20px;
+    }
+
+    &:hover, &:active {
+      outline: none;
+    }
+    &.Default{
+      border: 2px solid grey;
+    }
+    &.Filled{
+      border: 2px solid #9a9797;
+      background: #9a9797;
+    }
+    &.Unstyled{
+      border: 2px solid transparent;
+    }
+  }
+
+  .error {
+    color: red;
+    text-align: left;
+    padding-top: 7px;
+    display: block;
+    font-size: 14px;
+    min-height: 25px;
+  }
+
+}

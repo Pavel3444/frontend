@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as episode from '../data/episode.json';
 import Categories from "../components/categories";
 import {useState} from "react";
