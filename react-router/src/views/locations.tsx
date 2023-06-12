@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as location from '../data/location.json';
 import Categories from "../components/categories";
 import {useState} from "react";
