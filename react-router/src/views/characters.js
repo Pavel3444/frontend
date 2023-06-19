@@ -1,6 +1,6 @@
 import * as characters from '../data/characters.json';
-import Categories from "../components/categories";
-import {useState} from "react";
+import {lazy, useState} from "react";
+const Categories = lazy(()=>import('../components/categories'));
 
 export default function Characters() {
     const [list] = useState(characters);
