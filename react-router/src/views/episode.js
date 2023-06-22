@@ -1,11 +1,9 @@
-import * as episode from '../data/episode.json';
-import {lazy, useState} from "react";
+import {lazy} from "react";
 const Categories = lazy(()=>import('../components/categories'));
 
 export default function Episode() {
-    const [list] = useState(episode);
 
     return (<div>
-        <Categories list={list}/>
+        <Categories url="https://rickandmortyapi.com/api/episode"/>
     </div>)
 }
