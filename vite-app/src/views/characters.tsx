@@ -4,6 +4,7 @@ import {useState} from "react";
 
 export default function Characters() {
     const [list] = useState(characters);
+    console.log('vneshne ', list)
     return (<div>
         <Categories list={list}/>
     </div>)
