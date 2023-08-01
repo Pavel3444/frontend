@@ -1,0 +1,46 @@
+body, body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+  background: #2f2f7e;
+  color: #fff;
+}
+a{
+  color: #fff;
+  padding: 12px 24px;
+}
+.App-header {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.content {
+  height: 100vh;
+  width: 100%;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listEl{
+  margin: 20px;
+  font-size: 22px;
+}
+.details p{
+  padding: 1rem 0;
+}
