@@ -22,7 +22,7 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 {
-                    from: path.resolve(__dirname, 'public/favicon.png'),
+                    from: path.resolve(__dirname, 'public/icon.png'),
                     to: path.resolve(__dirname, 'dist'),
                 },
                 {

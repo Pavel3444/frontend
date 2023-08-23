@@ -14,12 +14,9 @@ export default function DetailsPage(){
         {state.species ? <p>Species: {state.species}</p>: null}
         {state.type ? <p>Type: {state.type}</p>: null}
         {state.gender ? <p>Gender: {state.gender}</p>: null}
-
         {state.air_date ? <p>Air date: {state.air_date}</p> : null}
-        {state.episode ? <p>Episode: {state.episode}</p> : null}
-
+        {state.episode && typeof state.episode === 'string' ? <p>Episode: {state.episode}</p> : null}
         {state.dimension ? <p>dimension: {state.dimension}</p> : null}
-        { state.episode ? <p>Episode: {state.episode}</p> : null}
 
 
 
